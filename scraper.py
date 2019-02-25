@@ -1,4 +1,4 @@
-import urllib
+import urllib2
 from xml.dom.minidom import parseString
 
 def get_google_new_results( term, count ):
