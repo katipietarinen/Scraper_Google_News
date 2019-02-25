@@ -1,4 +1,4 @@
-import urllib2
+import urllib
 from xml.dom.minidom import parseString
 
 def get_google_new_results( term, count ):
@@ -17,7 +17,7 @@ def get_google_new_results( term, count ):
     return results
 
 
-items = get_google_new_results( 'chagos+island', 50 )
+items = get_google_new_results( 'chagos+island', 10 )
 # items is a list where each element is a tuple (title, link,)
 for title,link in items:
     print title, ' ', link
