@@ -17,7 +17,7 @@ def get_google_new_results( term, count ):
     return results
 
 
-items = get_google_new_results( 'helsinki', 50 )
+items = get_google_new_results( 'finland', 50 )
 # items is a list where each element is a tuple (title, link,)
 for title,link in items:
     print title, ' ', link
